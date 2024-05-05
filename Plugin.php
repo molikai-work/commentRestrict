@@ -27,7 +27,7 @@ class CommentRestrict_Plugin implements Typecho_Plugin_Interface {
         $maxLength = new Typecho_Widget_Helper_Form_Element_Text('maxLength', NULL, '200', _t('評論最多字數'));
         $form->addInput($maxLength);
 
-        $forbiddenWords = new Typecho_Widget_Helper_Form_Element_Text('forbiddenWords', NULL, 'ces1,敏感詞2', _t('違禁詞列表（使用逗號分隔）'));
+        $forbiddenWords = new Typecho_Widget_Helper_Form_Element_Text('forbiddenWords', NULL, 'ces1,敏感詞2,#@$&3', _t('違禁詞列表（使用逗號分隔）'));
         $form->addInput($forbiddenWords);
     }
 
